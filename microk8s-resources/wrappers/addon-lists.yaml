@@ -121,6 +121,14 @@ microk8s-addons:
       - amd64
       - arm64
 
+    - name: "zfs"
+      description: "Enable use of containerds ZFS snapshotter when run on ZFS"
+      version: "1.0"
+      check_status: "${SNAP_DATA}/args/zfs-volumes"
+      supported_architectures:
+      - amd64
+      - arm64
+
     - name: "helm"
       description: "Helm 2 - the package manager for Kubernetes"
       version: "2.16.0"
